@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background-color: #cfcfcf;
+}
+
+.container {
+  box-sizing: border-box;
+  margin: 100px auto;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  width: 140px;
+  height: 160px;
+
+  background-color: white;
+}
+
+.stars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.stars__star {
+  width: 16px;
+  height: 15px;
+
+  background-image: url("./images/star.svg");
+  background-size: contain;
+}
+
+.stars--1 :nth-child(-n + 1),
+.stars--2 :nth-child(-n + 2),
+.stars--3 :nth-child(-n + 3),
+.stars--4 :nth-child(-n + 4),
+.stars--5 :nth-child(n) {
+  background-image: url("./images/star-active.svg");
+}
